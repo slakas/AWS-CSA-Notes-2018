@@ -38,7 +38,7 @@ When performing overwrite PUTS and DELETES, these updated and/or deleted objects
 - Encryption
 - Secure data using Access Control Lists bucket policies
 
-### Storage Tiers
+### Storage Tiers 
 
 - **S3 (Normal)**
 	- 99.99% availability, 99.(11 9’s )
@@ -56,6 +56,32 @@ When performing overwrite PUTS and DELETES, these updated and/or deleted objects
 	- Generally takes 3 - 5 hours to restore from glacier
     - Stores data for as low as .01G a month
     - Optimized for data that is infrequently accessed and for which retrieval times of 3 to 5 hours are suitable (slow retrieval).
+    
+### Amazon S3 Storage Classes
+
+- **S3 Standard**	
+    - Low latency and high throughput performance
+    - Designed for durability of 99.999999999% of objects across multiple Availability Zones
+    - Resilient against events that impact an entire Availability Zone
+    - Designed for 99.99% availability over a given year
+    - Backed with the Amazon S3 Service Level Agreement for availability
+    - Supports SSL for data in transit and encryption of data at rest
+    - S3 Lifecycle management for automatic migration of objects to other S3 Storage Classes  
+
+ - **S3 Intelligent-Tiering**
+    - Same low latency and high throughput performance of S3 Standard
+    **- Small monthly monitoring and auto-tiering fee**
+    **- Automatically moves objects between two access tiers based on changing access patterns**
+    - Designed for durability of 99.999999999% of objects across multiple Availability Zones
+    - Resilient against events that impact an entire Availability Zone
+    - Designed for 99.9% availability over a given year
+    - Backed with the Amazon S3 Service Level Agreement for availability
+    - Supports SSL for data in transit and encryption of data at rest
+    - S3 Lifecycle management for automatic migration of objects to other S3 Storage Classes
+
+ - **S3 Standard-IA**
+ 
+
 
 ### S3 Charges
 
